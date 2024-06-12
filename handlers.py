@@ -1,14 +1,14 @@
 from aiogram import Router, types
 from aiogram.filters import Command
 import requests
-import config
+import os
 
 router = Router()
 
 def forward_to_api(text: str):
     headers = {
         "Content-Type": "application/json",
-        "Authorization": f"Bearer {config.api_key}"
+        "Authorization": f"Bearer {os.getenv('api_key')}"
     }
     data = {
         "model": "",
