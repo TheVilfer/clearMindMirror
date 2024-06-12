@@ -1,0 +1,2 @@
+BOT_TOKEN = '7290450273:AAGL3KLqLy6-bbDDaUtPvcLac3RRNrZFQww'
+api_key = ''
