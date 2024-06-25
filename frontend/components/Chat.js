@@ -1,3 +1,4 @@
+'use client'
 // components/Chat.js
 import { useState } from 'react';
 import styles from './Chat.module.css';
