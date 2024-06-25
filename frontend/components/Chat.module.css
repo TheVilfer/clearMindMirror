@@ -9,6 +9,7 @@
     border-radius: 8px;
     padding: 16px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: bla;
   }
   
   .messages {
@@ -48,5 +49,99 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
+  }
+
+  .chatContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 16px;
+    background-color: #ffffff; /* White background */
+    font-family: Arial, sans-serif;
+  }
+  
+  .messages {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 16px;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f7f7f7; /* Light grey background for messages area */
+  }
+  
+  .message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .message .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #cccccc;
+    margin-right: 12px;
+  }
+  
+  .userMessage {
+    background-color: #e3f2fd; /* Light blue background for user messages */
+    color: black;
+    align-self: flex-end;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    max-width: 70%;
+    word-wrap: break-word;
+  }
+  
+  .botMessage {
+    background-color: #ffffff; /* White background for bot messages */
+    color: black;
+    border: 1px solid #e0e0e0;
+    align-self: flex-start;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    max-width: 70%;
+    word-wrap: break-word;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .inputContainer {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: #ffffff;
+  }
+  
+  .input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  .input::placeholder {
+    color: #cccccc;
+  }
+  
+  .button {
+    padding: 8px 16px;
+    background-color: #e3f2fd; /* Light blue background for button */
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 8px;
+  }
+  
+  .button:hover {
+    background-color: #bbdefb; /* Slightly darker blue on hover */
   }
   
