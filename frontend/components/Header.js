@@ -2,11 +2,11 @@
 
 import { Button } from "@/components/ui/button"
 
-
 export default function Header() {
     return (
         <>
-            <Button variant="outline">Profile</Button>
+            <Button variant="outline">Button</Button>
+
         </>
     )
 } 
