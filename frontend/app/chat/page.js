@@ -1,6 +1,7 @@
 // app/index.js
 import Head from 'next/head';
 import Chat from '/components/Chat';
+import Header from '/components/Header';
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       </Head>
 
       <main>
-
+        <Header />
         <Chat />
       </main>
     </div>
