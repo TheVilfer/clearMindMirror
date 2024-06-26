@@ -1,4 +1,4 @@
-'use client'
+'use client';
 // components/Chat.js
 import { useState } from 'react';
 import styles from './Chat.module.css';
@@ -36,15 +36,17 @@ export default function Chat() {
           </div>
         ))}
       </div>
-      <input
-        type="text"
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-        onKeyDown={(e) => (e.key === 'Enter' ? sendMessage() : null)}
-        className={styles.input}
-        placeholder="Type your message..."
-      />
-      <button onClick={sendMessage} className={styles.button}>Send</button>
+      <div className={styles.inputContainer}>
+        <input
+          type="text"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          onKeyDown={(e) => (e.key === 'Enter' ? sendMessage() : null)}
+          className={styles.input}
+          placeholder="Type your message..."
+        />
+        <button onClick={sendMessage} className={styles.button}>Send</button>
+      </div>
     </div>
   );
 }
