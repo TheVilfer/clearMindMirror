@@ -25,7 +25,8 @@ export default function Chat() {
       body: JSON.stringify({ message: input, conversationID: conversationID }),
     });
     const data = await response.json();
-    const botMessage = { sender: 'bot', text: data.data.output.output };
+
+    const botMessage = { sender: 'bot', text: data.output.output.content };
     setMessages([...messages, userMessage, botMessage]);
     setInput('');
   };
