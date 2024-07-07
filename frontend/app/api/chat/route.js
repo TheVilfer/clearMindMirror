@@ -3,8 +3,8 @@ import { NextResponse } from "next/server";
 
 
 export async function POST(req) {
-  let { message } = await req.json();
-  console.log(message)
+  let { message, conversationID } = await req.json();
+  console.log(message, conversationID)
 
   const url = "http://20.98.104.160:8000/invoke";
   const cookies = 'user_id=0808080';
@@ -19,7 +19,7 @@ export async function POST(req) {
       input: { human_input: message },
       config: {
         configurable: {
-          conversation_id: '1234567890'
+          conversation_id: conversationID
         }
       }
     })
