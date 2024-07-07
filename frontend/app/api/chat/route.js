@@ -1,4 +1,3 @@
-// // app/api/chat.js
 import { NextResponse } from "next/server";
 
 
