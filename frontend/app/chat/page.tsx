@@ -19,7 +19,7 @@ export default function Home() {
     });
     const data = await response.json();
     console.log(data, "output");
-    addMessage(data.data.output.output, false);
+    addMessage(data.data.output.content, false);
   };
 
   useEffect(() => {
